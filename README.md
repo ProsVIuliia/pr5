@@ -17,4 +17,4 @@
 - Адаптивный интерфейс для разных устройств.
 
 Ссылка на проект: 
-https://prosviuliia.github.io/pr4/
+https://prosviuliia.github.io/pr5/
