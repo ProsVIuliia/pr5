@@ -26,7 +26,7 @@ function openPopup(popup) {
 };
 
 function openPropfilePopup() {
-  authorProfile.value = authorProfileInput.textContent;
+  authorProfileInput.value = authorProfile.textContent;
   authorJobProfileInput.value = authorJobProfile.textContent;
   openPopup(popupForEditAuthor);
 };
@@ -77,14 +77,14 @@ function renderCard(elementPlace, element) {
 function submitAddCard(evt) {
   evt.preventDefault();
   const element = addCard(formInputImage.value, formInputTitle.value);
-  renderCard(cardElements, element);
+  renderCard(cardsContainer, element);
   formForAddCard.reset();
   closePopup(popupForAddCard);
 };
 
 initialCards.forEach((item) => {
   const element = addCard(item.link, item.name);
-  renderCard(cardElements, element);
+  renderCard(cardsContainer, element);
 });
 
 profileEditOpenBtn.addEventListener('click', openPropfilePopup);
